@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="style/heading.css">
+		<link rel="stylesheet" href="style/lista.css">
+		<link rel="stylesheet" href="style/panelbody.css">
+		<link rel="stylesheet" href="style/editWindow.css">
+		<link rel="stylesheet" href="style/addTab.css">
+		<link rel="stylesheet" href="style/specjalne.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link href="http://jquery.com/"></link>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<!-- <script src="script/callendar.js"></script> -->
+		<title>Order menagment</title>
+	</head>
+	<!-- https://colorkit.co/palette/d1dbe4-a3b7ca-7593af-476f95-194a7a/ -->
+  	<body>
+		<div class="ktab">
+			<div>Plik: </div> <div class="outputplik"></div></div>
+		<div class="menus">
+			<div class="menu" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<div class="heading">
+					<div>
+						<input type="file" onchange="readInputFile(this)"/>
+						<button id="save">Pobierz plik</button>	
+					</div>
+					
+					<div class="opcje">
+						<button id="add-order">Dodaj zlecenie</button>
+						<button id="btn1">Clear</button>
+					</div>
+	
+					<!-- <div class="calendar"></div> -->
+	
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel">
+			<div class="tabContainer">
+				<div class="tabs">	
+				</div>
+		
+				<button id="add-tab" onclick="addTab()">+</button>
+				<button id="delete-tab" onclick="deleteTab()">-</button>
+			</div>
+			
+		
+
+			<div class="panelbody">		
+						
+				<div class="headerTable">				
+					<div class="tekst date">Data</div>
+					<div class="tekst id">Id</div>
+					<div class="tekst tytul">Tytuł</div>
+					<div class="tekst opis">Opis</div>
+					<div class="tekst osoba">Osoba</div>
+					<div class="tekst status">Status</div>
+					<div class="tekst kategoria">Kategoria</div>
+					<div class="tekst deadline">Deadline</div>
+					<div class="tekst options">Options</div>					
+				</div>
+
+				<div class="Add">
+					<div class="empty"></div>
+<!-- 					
+						<div class="dateadd"></div>
+						<div class="idadd"></div> -->
+						<input
+						type="text"
+						autocomplete="off"
+						placeholder="Tytul"
+						id="title"
+						/>
+						<input
+						type="text"
+						autocomplete="off"
+						placeholder="Opis"
+						id="opis"
+						/>
+						<input
+						type="text"
+						autocomplete="off"
+						placeholder="Osoba"
+						id="person"
+						/>	
+						<input
+						type="text"
+						autocomplete="off"
+						placeholder="Status"
+						id="state"
+						/>
+						<input
+						type="text"
+						autocomplete="off"
+						placeholder="Kategoria"
+						id="category"
+					
+						/>
+						<input
+						type="date"
+						autocomplete="off"
+						placeholder="Deadline"
+						id="deadline"
+						/>
+					
+					<div class = "Button">
+						<button id = "btnadd">Add</button>
+						<button id = "btncancel">C</button>
+					</div> 
+				</div>
+			</div>
+		
+			<div id="lista1"></div>
+		</div>
+	
+	
+	</body>
+	<script src="script/addTab.js"></script>
+	<script src="script/script.js"></script>
+	<script src="script/menu.js"></script>
+	<!-- <script src="script/editWindow.js"></script> Proba edycji w oknie-->
+</html>
+
+
+	<!-- <div class="editWindow">
+				<div class="exitEW">
+					<button id="btnEWExit">X</button>
+				</div>
+				<div class="mainEW">
+					<div class="tytulEW">
+						<div class="titleEW">Tytuł</div>
+						<input type="text" id="tytulEW" value="">
+					</div>
+					<div class="opisEW">
+						<div class="titleEW">Opis</div>
+						<input type="text" id="opisEW" value="">
+					</div>
+					<div class="osobaEW">
+						<div class="titleEW">Osoba</div>
+						<input type="text" id="osobaEW" value="">					
+					</div>
+					<div class="statusEW">
+						<div class="titleEW">Status</div>
+						<input type="text" id="statusEW" value="">	
+					</div>
+					<div class="kategoriaEW">
+						<div class="titleEW">Kategoria</div>
+						<input type="text" id="kategoriaEW" value="">			
+					</div>
+					<div class="deadlineEW">
+						<div class="titleEW">Deadline</div>
+						<input type="date" id="deadlineEW" value="">			
+					</div>
+				</div>
+				<div class="saveEW">
+					<button id="btnEWSave">Save</button>
+				</div>
+			</div> -->

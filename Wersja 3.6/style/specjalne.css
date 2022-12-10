@@ -1,0 +1,6 @@
+.ktab{
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    top: 0px;
+}

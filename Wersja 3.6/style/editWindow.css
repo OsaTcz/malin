@@ -1,0 +1,133 @@
+.editWindow
+{
+    display: none;
+}
+.editWindow.grid{
+    display: grid;
+} 
+
+
+.editWindow, .editWindow.grid{
+   
+    
+    height: 600px;
+    width: 700px;
+    /*szkalny design?*/
+    background-color: darkgray;
+    position:fixed;
+    border: 1px solid black;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 40px 1fr 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}  
+
+.exitEW{
+    grid-row: 1;
+    grid-column: 3;
+}
+.mainEW{
+    grid-row: 2;
+    grid-column: 2;
+    background-color:blanchedalmond;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'tytul tytul'
+    'osoba opis'
+    'status opis'
+    'kategoria opis'
+    'deadline opis';
+
+}
+.saveEW{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.tytulEW, .opisEW, .osobaEW, .statusEW, .kategoriaEW, .deadlineEW{
+    justify-content: center;
+    justify-self: center;   
+    height: 20px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.tytulEW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: tytul;
+    height: 50px;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 15px;
+ }
+.osobaEW{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: osoba;
+    height: 45%;
+}
+.opisEW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: opis;
+    height: 400px;
+    width: 300px;
+}
+
+.statusEW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: status;
+    align-self: center;
+    height: 45%;
+}
+.kategoriaEW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: kategoria;
+    align-self: center;
+    height: 45%;
+}
+
+.deadlineEW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: deadline;
+    align-self: center;
+    height: 45%;
+}
+
+.exitEW{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnEWExit{
+    height: 20px;
+    width: 20px;
+}
+
+#tytulEW{
+    height: 20px;
+    width: 99%;
+
+}
+
+#opisEW{
+    height: 370px;
+    width: 90%;
+}
+

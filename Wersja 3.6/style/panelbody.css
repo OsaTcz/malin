@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.panel{
+    font-family: 'Poppins', sans-serif;
+}
+.panelbody{
+    font-size: 15px;
+    max-height: 120px;
+    background-color: #a3b7ca;
+}
+.headerTable{
+    height: 40px;
+    background-color: #a3b7ca;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+.headerTable, #orderInfo{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.tekst, .tekst2{
+    /* text-overflow: ellipsis;   */
+    justify-content: center;
+    word-wrap: break-word;  
+    white-space: pre-wrap;
+    padding: 5px;
+}
+
+
+.tekst.date,.tekst.deadline{
+    width: 6%;
+}
+.tekst.id{
+    width: 3%;
+}
+.tekst.tytul{
+    width: 15.4%;
+}
+.tekst.options{
+    width: 5%;
+}
+
+.tekst.opis{
+    width: 36.6%;
+}
+.tekst.status{
+    width: 10%;
+}
+.tekst.osoba{
+    width: 10%;
+}
+.tekst.kategoria{
+    width: 10%;
+}
+.tekst2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.Add {
+    display: none;
+}
+.Add.flex {
+    display: flex; 
+    background-color: #C6AC8F;
+    height: 60px;
+    align-items: center;
+}
+
+.empty{
+    width: 13%;
+    height: 20px;
+}
+.cosie{
+    width: 90% ;
+}
+#title, #opis, #person, #state, #category{
+    width: 17.5%;
+   
+}
+#deadline{
+    width: 8%;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    width: 5.5%;
+}
+
+.dateadd{
+    width: 8%;
+    height: 20px;
+}
+.idadd{
+    width: 3%;
+}

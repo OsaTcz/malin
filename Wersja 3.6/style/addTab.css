@@ -1,0 +1,41 @@
+#btn, #btn1, #add-order, #save{
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    background-color: #a3b7ca;
+    border: 1px black;
+    border-style: solid solid none solid ;
+   
+   
+}
+#add-order, #save{
+    width: 100px;
+}
+.tabs{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+#btn.clicked{
+    background-color:#7b8996;
+}
+#add-tab, #delete-tab{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:aliceblue;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.tabContainer{
+    display: flex
+}
+
+
+#btn{ 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+}

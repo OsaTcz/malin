@@ -1,0 +1,42 @@
+
+.heading{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.heading.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.opcje{
+    display: flex;
+    height: 20px;
+}
+.calendar{
+    height: 200px;
+    width: 300px;
+    background-color: #D62828;
+}
+
+.menu{
+    height: 15px;
+    width: 100%;
+    display: flex;   
+    background-color: aliceblue;
+    align-self: center;
+    justify-self: center;
+    /* border-radius: 0% 0% 50% 50%; */
+}
+
+.menus{
+    display: flex; 
+ 
+    justify-content: center;
+}
